@@ -1,0 +1,32 @@
+version: 2 
+
+sources:
+  - name: gz_raw_data
+    description: le wagon raw data challenge 
+    tables:
+     
+      - name: raw_gz_product
+        description: products 
+        columns:
+          - name: product_id 
+            description: primary key 
+            tests:
+              - unique:
+              - not_null:
+                  
+      
+      
+      
+      - name: raw_gz_sales
+        description: sales
+        columns: 
+          - name: date_date 
+            description: the date of purchase 
+            tests:
+              - not_null
+                  
+
+
+      - name: raw_gz_ship
+        description: shipping 
+    
